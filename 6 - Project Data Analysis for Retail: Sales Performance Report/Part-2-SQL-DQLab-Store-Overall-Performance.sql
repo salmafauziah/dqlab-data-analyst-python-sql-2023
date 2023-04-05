@@ -16,7 +16,7 @@ ORDER BY years ASC;
 SELECT YEAR(order_date) AS years,
 		product_sub_category, 
 		SUM(sales) AS sales
-from dqlab_sales_store
-where order_status = 'order finished' AND (YEAR(order_date) between 2011 and 2012)
-group by years, product_sub_category
-order by years asc, sales desc;
+FROM dqlab_sales_store
+WHERE order_status = 'order finished' AND (YEAR(order_date) BETWEEN 2011 AND 2012)
+GROUP BY years, product_sub_category
+ORDER BY years ASC, sales DESC;
