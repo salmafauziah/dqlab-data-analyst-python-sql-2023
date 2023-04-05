@@ -9,3 +9,14 @@ WHERE order_status = "order finished"
 GROUP BY years
 ORDER BY years ASC;
 
+# Overall Performance by Product Sub Category
+# Buatlah Query dengan menggunakan SQL untuk mendapatkan total penjualan (sales) 
+# berdasarkan sub category dari produk (product_sub_category) pada tahun 2011 dan 2012 saja (years) 
+
+SELECT YEAR(order_date) AS years,
+		product_sub_category, 
+		SUM(sales) AS sales
+from dqlab_sales_store
+where order_status = 'order finished' AND (YEAR(order_date) between 2011 and 2012)
+group by years, product_sub_category
+order by years asc, sales desc;
