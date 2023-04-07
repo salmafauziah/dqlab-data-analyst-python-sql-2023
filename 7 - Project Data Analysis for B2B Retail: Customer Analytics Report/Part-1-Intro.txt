@@ -25,3 +25,10 @@ Menggunakan “order by” untuk mengurutkan data
 Menggunakan “union” untuk menggabungkan tabel data penjualan
 Menggunakan “date and time function” dan fungsi text untuk data manipulation
 Menggunakan subquery untuk menyimpan hasil sementara untuk digunakan kembali dalam query.
+
+Tabel yang Digunakan
+Tabel yang akan digunakan pada project kali ini adalah sebagai berikut.
+
+Tabel orders_1 : Berisi data terkait transaksi penjualan periode quarter 1 (Jan – Mar 2004)
+Tabel Orders_2 : Berisi data terkait transaksi penjualan periode quarter 2 (Apr – Jun 2004)
+Tabel Customer : Berisi data profil customer yang mendaftar menjadi customer xyz.com
