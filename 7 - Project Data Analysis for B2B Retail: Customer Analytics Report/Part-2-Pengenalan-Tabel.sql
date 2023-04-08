@@ -15,3 +15,8 @@
 # Mengecek tabel customer :SELECT * FROM customer limit 5;
 # Lakukan pengecekan data di query editor dan jika berhasil hasil sebagai berikut
 
+SELECT * FROM orders_1 limit 5;
+
+SELECT * FROM orders_2 limit 5;
+
+SELECT * FROM customer limit 5;
